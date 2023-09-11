@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.crear {
+    margin-top: 7rem;
+    .soporte {
+        @include m.textoDegradado(v.$cyan, v.$amarillo);
+ 
+    }
+
+    input[type="submit"] {
+       
+        @include m.boton(v.$cyan, v.$amarillo);
+    }
+ 
+    .acciones {
+        a {
+            color: v.$cyan;
+        }
+    }
+}
+

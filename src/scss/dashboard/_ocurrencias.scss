@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-nueva-ocurrencia {
+    display: flex;
+    justify-content: center;
+
+    .agregar-ocurrencia {
+        @include m.boton(v.$indigo, v.$amarillo);
+        margin-top: 0rem;
+    }
+}
